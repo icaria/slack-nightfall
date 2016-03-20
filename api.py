@@ -7,14 +7,14 @@ app = Flask(__name__)
 
 @app.route('/')
 def api_root():
-    return 'Welcome'
+    return "Stephen's Slack Macros. Welcome!"
 
 
 @app.route('/macros/rofl')
 def rofl():
     data = {
         "response_type": "in_channel",
-        "text": ":slightly_smiling_face: :upside_down_fac: :slightly_smiling_face: :upside_down_face: :slightly_smiling_face: :upside_down_face: :slightly_smiling_face:"
+        "text": ":slightly_smiling_face: :upside_down_face: :slightly_smiling_face: :upside_down_face: :slightly_smiling_face: :upside_down_face: :slightly_smiling_face:"
     }
     return jsonify(**data)
 
